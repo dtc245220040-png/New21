@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow - Nâng cao hiệu suất</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #263247;
+        }
+
+        .navbar-brand {
+            color: #0d6efd;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #eaf3ff, #f8fbff);
+            padding: 80px 0;
+        }
+
+        .hero-section h1 {
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        .hero-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .section-padding {
+            padding: 70px 0;
+        }
+
+        .feature-card {
+            height: 100%;
+            padding: 30px 20px;
+            border: 1px solid #e8edf3;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-icon {
+            font-size: 38px;
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+
+        .cta-section {
+            background-color: #0d6efd;
+            color: white;
+            padding: 60px 20px;
+        }
+
+        footer {
+            background-color: #172337;
+            color: #d8e0eb;
+            padding: 25px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 45px 0;
+                text-align: center;
+            }
+
+            .hero-section h1 {
+                font-size: 32px;
+            }
+
+            .hero-image {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">FocusFlow</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false"
+                aria-label="Mở menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Tính năng</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-primary" href="#contact">
+                            Đăng ký ngay
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner / Hero -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+                    <span class="badge bg-primary-subtle text-primary mb-3 p-2">
+                        Giải pháp làm việc thông minh
+                    </span>
+
+                    <h1>
+                        Quản lý công việc dễ dàng,
+                        <span class="text-primary">hiệu quả hơn</span>
+                    </h1>
+
+                    <p class="text-secondary my-4">
+                        FocusFlow giúp bạn sắp xếp công việc, quản lý thời gian
+                        và nâng cao năng suất mỗi ngày.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary btn-lg me-2">
+                        Bắt đầu ngay
+                    </a>
+
+                    <a href="#features" class="btn btn-outline-primary btn-lg">
+                        Tìm hiểu thêm
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=85"
+                        class="img-fluid hero-image"
+                        alt="Không gian làm việc với máy tính xách tay"
+                    >
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Giới thiệu -->
+    <section class="section-padding" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-md-6">
+                    <img
+                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
+                        class="img-fluid rounded-4"
+                        alt="Không gian văn phòng hiện đại"
+                    >
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">
+                        Về FocusFlow
+                    </h2>
+
+                    <p class="text-secondary">
+                        FocusFlow là giải pháp hỗ trợ quản lý công việc
+                        dành cho học sinh, sinh viên và người đi làm.
+                    </p>
+
+                    <p class="text-secondary">
+                        Với giao diện đơn giản và các công cụ hữu ích,
+                        bạn có thể theo dõi tiến độ, lập kế hoạch và
+                        hoàn thành mục tiêu đúng thời hạn.
+                    </p>
+
+                    <a href="#features" class="btn btn-primary mt-2">
+                        Khám phá tính năng
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Danh sách tính năng -->
+    <section class="section-padding bg-light" id="features">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Tính năng nổi bật</h2>
+                <p class="text-secondary">
+                    Những công cụ giúp bạn làm việc hiệu quả hơn.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Tính năng 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="feature-card bg-white text-center">
+                        <i class="bi bi-calendar-check feature-icon"></i>
+                        <h5 class="fw-bold">Lập kế hoạch</h5>
+                        <p class="text-secondary mb-0">
+                            Sắp xếp lịch trình và công việc mỗi ngày.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="feature-card bg-white text-center">
+                        <i class="bi bi-clock feature-icon"></i>
+                        <h5 class="fw-bold">Quản lý thời gian</h5>
+                        <p class="text-secondary mb-0">
+                            Sử dụng thời gian hợp lý và khoa học.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="feature-card bg-white text-center">
+                        <i class="bi bi-graph-up-arrow feature-icon"></i>
+                        <h5 class="fw-bold">Theo dõi tiến độ</h5>
+                        <p class="text-secondary mb-0">
+                            Theo dõi kết quả và mục tiêu đã hoàn thành.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="feature-card bg-white text-center">
+                        <i class="bi bi-shield-check feature-icon"></i>
+                        <h5 class="fw-bold">Dễ sử dụng</h5>
+                        <p class="text-secondary mb-0">
+                            Giao diện thân thiện trên nhiều thiết bị.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Kêu gọi hành động -->
+    <section class="cta-section text-center" id="contact">
+        <div class="container">
+            <h2 class="fw-bold mb-3">
+                Bắt đầu hành trình hiệu quả hơn!
+            </h2>
+
+            <p class="mb-4">
+                Lập kế hoạch tốt hơn và chinh phục mục tiêu của bạn ngay hôm nay.
+            </p>
+
+            <a href="mailto:contact@example.com"
+                class="btn btn-light btn-lg text-primary fw-bold">
+                Đăng ký ngay
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1">
+                © 2026 FocusFlow. All rights reserved.
+            </p>
+            <small>Thiết kế bằng HTML, CSS và Bootstrap 5.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
